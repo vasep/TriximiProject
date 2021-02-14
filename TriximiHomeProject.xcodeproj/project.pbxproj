@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0AE79E147B47524995AA26 /* Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BB723CDE63D5F111DA32DB /* Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework */; };
+		33110DDD25D70B3D0056F606 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33110DDC25D70B3D0056F606 /* Dashboard.storyboard */; };
+		33110DF725D7117C0056F606 /* TopDashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33110DF525D7117C0056F606 /* TopDashboardCell.swift */; };
+		33110DF825D7117C0056F606 /* TopDashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33110DF625D7117C0056F606 /* TopDashboardCell.xib */; };
+		33110DFE25D711920056F606 /* BottomDashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33110DFC25D711920056F606 /* BottomDashboardCell.swift */; };
+		33110DFF25D711920056F606 /* BottomDashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33110DFD25D711920056F606 /* BottomDashboardCell.xib */; };
+		33110E0425D71B250056F606 /* DashboardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33110E0325D71B250056F606 /* DashboardTableView.swift */; };
+		33110E1D25D73D2A0056F606 /* RedeemStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33110E1C25D73D290056F606 /* RedeemStoryboard.storyboard */; };
+		3316248225D9543F004AD9A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3316248125D9543F004AD9A8 /* Constants.swift */; };
+		3316248725D9598F004AD9A8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3316248625D9598F004AD9A8 /* UserModel.swift */; };
+		331624AF25D9ABDF004AD9A8 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331624AC25D9ABDF004AD9A8 /* Balance.swift */; };
+		331624B025D9ABDF004AD9A8 /* RewardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331624AD25D9ABDF004AD9A8 /* RewardsModel.swift */; };
+		331624B125D9ABDF004AD9A8 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331624AE25D9ABDF004AD9A8 /* Reward.swift */; };
+		331624BC25D9B2CD004AD9A8 /* RedeemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331624BB25D9B2CD004AD9A8 /* RedeemModel.swift */; };
+		3329919625D84D9E00CF75A7 /* RedeemRewardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329919525D84D9D00CF75A7 /* RedeemRewardController.swift */; };
+		3329919B25D84DB000CF75A7 /* ClaimRewardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329919A25D84DB000CF75A7 /* ClaimRewardController.swift */; };
+		332991B325D8759300CF75A7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332991B225D8759300CF75A7 /* SignUpController.swift */; };
+		332991B825D875A100CF75A7 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332991B725D875A100CF75A7 /* SignInController.swift */; };
+		3374185D25D67B3F0042E6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374185C25D67B3F0042E6F9 /* AppDelegate.swift */; };
+		3374186425D67B3F0042E6F9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3374186225D67B3F0042E6F9 /* Login.storyboard */; };
+		3374186625D67B410042E6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3374186525D67B410042E6F9 /* Assets.xcassets */; };
+		3374186925D67B410042E6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3374186725D67B410042E6F9 /* LaunchScreen.storyboard */; };
+		3374187425D67B410042E6F9 /* TriximiHomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374187325D67B410042E6F9 /* TriximiHomeProjectTests.swift */; };
+		3374187F25D67B410042E6F9 /* TriximiHomeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374187E25D67B410042E6F9 /* TriximiHomeProjectUITests.swift */; };
+		337418A325D682000042E6F9 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189825D682000042E6F9 /* RobotoCondensed-Italic.ttf */; };
+		337418A425D682000042E6F9 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189925D682000042E6F9 /* RobotoCondensed-Light.ttf */; };
+		337418A525D682000042E6F9 /* UnitedSansCond-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189A25D682000042E6F9 /* UnitedSansCond-Bold.otf */; };
+		337418A625D682000042E6F9 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189B25D682000042E6F9 /* RobotoCondensed-Regular.ttf */; };
+		337418A725D682000042E6F9 /* UnitedSansCond-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189C25D682000042E6F9 /* UnitedSansCond-Medium.otf */; };
+		337418A825D682000042E6F9 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189D25D682000042E6F9 /* RobotoCondensed-BoldItalic.ttf */; };
+		337418A925D682000042E6F9 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189E25D682000042E6F9 /* RobotoCondensed-LightItalic.ttf */; };
+		337418AA25D682000042E6F9 /* UnitedSansCond-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3374189F25D682000042E6F9 /* UnitedSansCond-Heavy.otf */; };
+		337418AB25D682000042E6F9 /* UnitedSansSemiExt-Light_0.otf in Resources */ = {isa = PBXBuildFile; fileRef = 337418A025D682000042E6F9 /* UnitedSansSemiExt-Light_0.otf */; };
+		337418AC25D682000042E6F9 /* Old Typography.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 337418A125D682000042E6F9 /* Old Typography.ttf */; };
+		337418AD25D682000042E6F9 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 337418A225D682000042E6F9 /* RobotoCondensed-Bold.ttf */; };
+		3379035825D80C6E009BFD8C /* ClaimStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3379035725D80C6E009BFD8C /* ClaimStoryboard.storyboard */; };
+		3379036125D8110D009BFD8C /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379036025D8110D009BFD8C /* WelcomeController.swift */; };
+		3379036625D81BFE009BFD8C /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379036525D81BFE009BFD8C /* AppNavigationController.swift */; };
+		D2C0C3E541702EC6DF0B3E57 /* Pods_TriximiHomeProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23741C52201B4F87CF85543 /* Pods_TriximiHomeProjectTests.framework */; };
+		EBA71B737AC9F5CBD5B2E8BF /* Pods_TriximiHomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE81BFB19C941AE6C10CDC3 /* Pods_TriximiHomeProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3374187025D67B410042E6F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3374185125D67B3F0042E6F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3374185825D67B3F0042E6F9;
+			remoteInfo = TriximiHomeProject;
+		};
+		3374187B25D67B410042E6F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3374185125D67B3F0042E6F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3374185825D67B3F0042E6F9;
+			remoteInfo = TriximiHomeProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33110DDC25D70B3D0056F606 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		33110DF525D7117C0056F606 /* TopDashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDashboardCell.swift; sourceTree = "<group>"; };
+		33110DF625D7117C0056F606 /* TopDashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopDashboardCell.xib; sourceTree = "<group>"; };
+		33110DFC25D711920056F606 /* BottomDashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDashboardCell.swift; sourceTree = "<group>"; };
+		33110DFD25D711920056F606 /* BottomDashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomDashboardCell.xib; sourceTree = "<group>"; };
+		33110E0325D71B250056F606 /* DashboardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableView.swift; sourceTree = "<group>"; };
+		33110E1C25D73D290056F606 /* RedeemStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RedeemStoryboard.storyboard; sourceTree = "<group>"; };
+		3316248125D9543F004AD9A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3316248625D9598F004AD9A8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		331624AC25D9ABDF004AD9A8 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		331624AD25D9ABDF004AD9A8 /* RewardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsModel.swift; sourceTree = "<group>"; };
+		331624AE25D9ABDF004AD9A8 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		331624BB25D9B2CD004AD9A8 /* RedeemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemModel.swift; sourceTree = "<group>"; };
+		3329919525D84D9D00CF75A7 /* RedeemRewardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemRewardController.swift; sourceTree = "<group>"; };
+		3329919A25D84DB000CF75A7 /* ClaimRewardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimRewardController.swift; sourceTree = "<group>"; };
+		332991B225D8759300CF75A7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		332991B725D875A100CF75A7 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		3374185925D67B3F0042E6F9 /* TriximiHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriximiHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3374185C25D67B3F0042E6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3374186325D67B3F0042E6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		3374186525D67B410042E6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3374186825D67B410042E6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3374186A25D67B410042E6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3374186F25D67B410042E6F9 /* TriximiHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriximiHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3374187325D67B410042E6F9 /* TriximiHomeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriximiHomeProjectTests.swift; sourceTree = "<group>"; };
+		3374187525D67B410042E6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3374187A25D67B410042E6F9 /* TriximiHomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriximiHomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3374187E25D67B410042E6F9 /* TriximiHomeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriximiHomeProjectUITests.swift; sourceTree = "<group>"; };
+		3374188025D67B410042E6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3374189825D682000042E6F9 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Italic.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		3374189925D682000042E6F9 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Light.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		3374189A25D682000042E6F9 /* UnitedSansCond-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UnitedSansCond-Bold.otf"; path = "../../../../Downloads/Test App/Fonts/UnitedSansCond-Bold.otf"; sourceTree = "<group>"; };
+		3374189B25D682000042E6F9 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		3374189C25D682000042E6F9 /* UnitedSansCond-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UnitedSansCond-Medium.otf"; path = "../../../../Downloads/Test App/Fonts/UnitedSansCond-Medium.otf"; sourceTree = "<group>"; };
+		3374189D25D682000042E6F9 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-BoldItalic.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3374189E25D682000042E6F9 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		3374189F25D682000042E6F9 /* UnitedSansCond-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UnitedSansCond-Heavy.otf"; path = "../../../../Downloads/Test App/Fonts/UnitedSansCond-Heavy.otf"; sourceTree = "<group>"; };
+		337418A025D682000042E6F9 /* UnitedSansSemiExt-Light_0.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UnitedSansSemiExt-Light_0.otf"; path = "../../../../Downloads/Test App/Fonts/UnitedSansSemiExt-Light_0.otf"; sourceTree = "<group>"; };
+		337418A125D682000042E6F9 /* Old Typography.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Old Typography.ttf"; path = "../../../../Downloads/Test App/Fonts/Old Typography.ttf"; sourceTree = "<group>"; };
+		337418A225D682000042E6F9 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Bold.ttf"; path = "../../../../Downloads/Test App/Fonts/RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		3379035725D80C6E009BFD8C /* ClaimStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClaimStoryboard.storyboard; sourceTree = "<group>"; };
+		3379036025D8110D009BFD8C /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		3379036525D81BFE009BFD8C /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		3FFDF0BF2159B13DA4C63124 /* Pods-TriximiHomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProject.debug.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProject/Pods-TriximiHomeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4A155B8DE958722E8DD30D07 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProject-TriximiHomeProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProject-TriximiHomeProjectUITests/Pods-TriximiHomeProject-TriximiHomeProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B0C57E3389E9BD91A4829D4 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProject-TriximiHomeProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProject-TriximiHomeProjectUITests/Pods-TriximiHomeProject-TriximiHomeProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CE81BFB19C941AE6C10CDC3 /* Pods_TriximiHomeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriximiHomeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD846EE9586679A40492BEA6 /* Pods-TriximiHomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProject.release.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProject/Pods-TriximiHomeProject.release.xcconfig"; sourceTree = "<group>"; };
+		B6BB723CDE63D5F111DA32DB /* Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B825A5BA19077605677F3614 /* Pods-TriximiHomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProjectTests/Pods-TriximiHomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		F23741C52201B4F87CF85543 /* Pods_TriximiHomeProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriximiHomeProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460C31692128AE2FA9A5460 /* Pods-TriximiHomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriximiHomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TriximiHomeProjectTests/Pods-TriximiHomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3374185625D67B3F0042E6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA71B737AC9F5CBD5B2E8BF /* Pods_TriximiHomeProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374186C25D67B410042E6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C0C3E541702EC6DF0B3E57 /* Pods_TriximiHomeProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374187725D67B410042E6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0AE79E147B47524995AA26 /* Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07965124DACCE06A23D7BFA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CE81BFB19C941AE6C10CDC3 /* Pods_TriximiHomeProject.framework */,
+				B6BB723CDE63D5F111DA32DB /* Pods_TriximiHomeProject_TriximiHomeProjectUITests.framework */,
+				F23741C52201B4F87CF85543 /* Pods_TriximiHomeProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33110DDB25D70AF90056F606 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				33110DDC25D70B3D0056F606 /* Dashboard.storyboard */,
+				33110DF525D7117C0056F606 /* TopDashboardCell.swift */,
+				33110DF625D7117C0056F606 /* TopDashboardCell.xib */,
+				33110DFC25D711920056F606 /* BottomDashboardCell.swift */,
+				33110DFD25D711920056F606 /* BottomDashboardCell.xib */,
+				33110E0325D71B250056F606 /* DashboardTableView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		33110E1A25D73B930056F606 /* ClaimReward */ = {
+			isa = PBXGroup;
+			children = (
+				3379035725D80C6E009BFD8C /* ClaimStoryboard.storyboard */,
+				3329919A25D84DB000CF75A7 /* ClaimRewardController.swift */,
+			);
+			path = ClaimReward;
+			sourceTree = "<group>";
+		};
+		33110E1B25D73BC50056F606 /* RedeemReward */ = {
+			isa = PBXGroup;
+			children = (
+				33110E1C25D73D290056F606 /* RedeemStoryboard.storyboard */,
+				3329919525D84D9D00CF75A7 /* RedeemRewardController.swift */,
+			);
+			path = RedeemReward;
+			sourceTree = "<group>";
+		};
+		3316248B25D97707004AD9A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331624A825D9ABCB004AD9A8 /* Rewards */,
+				3316248625D9598F004AD9A8 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		331624A825D9ABCB004AD9A8 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				331624AC25D9ABDF004AD9A8 /* Balance.swift */,
+				331624AD25D9ABDF004AD9A8 /* RewardsModel.swift */,
+				331624AE25D9ABDF004AD9A8 /* Reward.swift */,
+				331624BB25D9B2CD004AD9A8 /* RedeemModel.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		3374185025D67B3F0042E6F9 = {
+			isa = PBXGroup;
+			children = (
+				3374185B25D67B3F0042E6F9 /* TriximiHomeProject */,
+				3374187225D67B410042E6F9 /* TriximiHomeProjectTests */,
+				3374187D25D67B410042E6F9 /* TriximiHomeProjectUITests */,
+				3374185A25D67B3F0042E6F9 /* Products */,
+				4F1CA9E28E1A022A43464869 /* Pods */,
+				07965124DACCE06A23D7BFA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3374185A25D67B3F0042E6F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3374185925D67B3F0042E6F9 /* TriximiHomeProject.app */,
+				3374186F25D67B410042E6F9 /* TriximiHomeProjectTests.xctest */,
+				3374187A25D67B410042E6F9 /* TriximiHomeProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3374185B25D67B3F0042E6F9 /* TriximiHomeProject */ = {
+			isa = PBXGroup;
+			children = (
+				3316248B25D97707004AD9A8 /* Model */,
+				3379035F25D810D2009BFD8C /* Login */,
+				33110E1B25D73BC50056F606 /* RedeemReward */,
+				33110E1A25D73B930056F606 /* ClaimReward */,
+				33110DDB25D70AF90056F606 /* Dashboard */,
+				3374185C25D67B3F0042E6F9 /* AppDelegate.swift */,
+				3374186525D67B410042E6F9 /* Assets.xcassets */,
+				3374186725D67B410042E6F9 /* LaunchScreen.storyboard */,
+				3374186A25D67B410042E6F9 /* Info.plist */,
+				3374189725D681D90042E6F9 /* Resources */,
+				3379036525D81BFE009BFD8C /* AppNavigationController.swift */,
+				3316248125D9543F004AD9A8 /* Constants.swift */,
+			);
+			path = TriximiHomeProject;
+			sourceTree = "<group>";
+		};
+		3374187225D67B410042E6F9 /* TriximiHomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3374187325D67B410042E6F9 /* TriximiHomeProjectTests.swift */,
+				3374187525D67B410042E6F9 /* Info.plist */,
+			);
+			path = TriximiHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		3374187D25D67B410042E6F9 /* TriximiHomeProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3374187E25D67B410042E6F9 /* TriximiHomeProjectUITests.swift */,
+				3374188025D67B410042E6F9 /* Info.plist */,
+			);
+			path = TriximiHomeProjectUITests;
+			sourceTree = "<group>";
+		};
+		3374189725D681D90042E6F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				337418A125D682000042E6F9 /* Old Typography.ttf */,
+				337418A225D682000042E6F9 /* RobotoCondensed-Bold.ttf */,
+				3374189D25D682000042E6F9 /* RobotoCondensed-BoldItalic.ttf */,
+				3374189825D682000042E6F9 /* RobotoCondensed-Italic.ttf */,
+				3374189925D682000042E6F9 /* RobotoCondensed-Light.ttf */,
+				3374189E25D682000042E6F9 /* RobotoCondensed-LightItalic.ttf */,
+				3374189B25D682000042E6F9 /* RobotoCondensed-Regular.ttf */,
+				3374189A25D682000042E6F9 /* UnitedSansCond-Bold.otf */,
+				3374189F25D682000042E6F9 /* UnitedSansCond-Heavy.otf */,
+				3374189C25D682000042E6F9 /* UnitedSansCond-Medium.otf */,
+				337418A025D682000042E6F9 /* UnitedSansSemiExt-Light_0.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3379035F25D810D2009BFD8C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3374186225D67B3F0042E6F9 /* Login.storyboard */,
+				3379036025D8110D009BFD8C /* WelcomeController.swift */,
+				332991B225D8759300CF75A7 /* SignUpController.swift */,
+				332991B725D875A100CF75A7 /* SignInController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4F1CA9E28E1A022A43464869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDF0BF2159B13DA4C63124 /* Pods-TriximiHomeProject.debug.xcconfig */,
+				AD846EE9586679A40492BEA6 /* Pods-TriximiHomeProject.release.xcconfig */,
+				5B0C57E3389E9BD91A4829D4 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.debug.xcconfig */,
+				4A155B8DE958722E8DD30D07 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.release.xcconfig */,
+				F460C31692128AE2FA9A5460 /* Pods-TriximiHomeProjectTests.debug.xcconfig */,
+				B825A5BA19077605677F3614 /* Pods-TriximiHomeProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3374185825D67B3F0042E6F9 /* TriximiHomeProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3374188325D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProject" */;
+			buildPhases = (
+				180A6CAE5D4CB09C0F087265 /* [CP] Check Pods Manifest.lock */,
+				3374185525D67B3F0042E6F9 /* Sources */,
+				3374185625D67B3F0042E6F9 /* Frameworks */,
+				3374185725D67B3F0042E6F9 /* Resources */,
+				000ECD47888A812033937C1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriximiHomeProject;
+			productName = TriximiHomeProject;
+			productReference = 3374185925D67B3F0042E6F9 /* TriximiHomeProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3374186E25D67B410042E6F9 /* TriximiHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3374188625D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProjectTests" */;
+			buildPhases = (
+				3E1EF5CFBE4419CDDAC6D53C /* [CP] Check Pods Manifest.lock */,
+				3374186B25D67B410042E6F9 /* Sources */,
+				3374186C25D67B410042E6F9 /* Frameworks */,
+				3374186D25D67B410042E6F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3374187125D67B410042E6F9 /* PBXTargetDependency */,
+			);
+			name = TriximiHomeProjectTests;
+			productName = TriximiHomeProjectTests;
+			productReference = 3374186F25D67B410042E6F9 /* TriximiHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3374187925D67B410042E6F9 /* TriximiHomeProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3374188925D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProjectUITests" */;
+			buildPhases = (
+				8690A0B4FDE54AE89D134345 /* [CP] Check Pods Manifest.lock */,
+				3374187625D67B410042E6F9 /* Sources */,
+				3374187725D67B410042E6F9 /* Frameworks */,
+				3374187825D67B410042E6F9 /* Resources */,
+				F5B4354DD30C03996844286A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3374187C25D67B410042E6F9 /* PBXTargetDependency */,
+			);
+			name = TriximiHomeProjectUITests;
+			productName = TriximiHomeProjectUITests;
+			productReference = 3374187A25D67B410042E6F9 /* TriximiHomeProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3374185125D67B3F0042E6F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3374185825D67B3F0042E6F9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3374186E25D67B410042E6F9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3374185825D67B3F0042E6F9;
+					};
+					3374187925D67B410042E6F9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3374185825D67B3F0042E6F9;
+					};
+				};
+			};
+			buildConfigurationList = 3374185425D67B3F0042E6F9 /* Build configuration list for PBXProject "TriximiHomeProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3374185025D67B3F0042E6F9;
+			productRefGroup = 3374185A25D67B3F0042E6F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3374185825D67B3F0042E6F9 /* TriximiHomeProject */,
+				3374186E25D67B410042E6F9 /* TriximiHomeProjectTests */,
+				3374187925D67B410042E6F9 /* TriximiHomeProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3374185725D67B3F0042E6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33110DF825D7117C0056F606 /* TopDashboardCell.xib in Resources */,
+				337418A725D682000042E6F9 /* UnitedSansCond-Medium.otf in Resources */,
+				3374186925D67B410042E6F9 /* LaunchScreen.storyboard in Resources */,
+				337418A925D682000042E6F9 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				337418A825D682000042E6F9 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				337418AD25D682000042E6F9 /* RobotoCondensed-Bold.ttf in Resources */,
+				337418A325D682000042E6F9 /* RobotoCondensed-Italic.ttf in Resources */,
+				33110E1D25D73D2A0056F606 /* RedeemStoryboard.storyboard in Resources */,
+				337418A625D682000042E6F9 /* RobotoCondensed-Regular.ttf in Resources */,
+				337418AC25D682000042E6F9 /* Old Typography.ttf in Resources */,
+				337418A525D682000042E6F9 /* UnitedSansCond-Bold.otf in Resources */,
+				337418AA25D682000042E6F9 /* UnitedSansCond-Heavy.otf in Resources */,
+				3374186625D67B410042E6F9 /* Assets.xcassets in Resources */,
+				337418AB25D682000042E6F9 /* UnitedSansSemiExt-Light_0.otf in Resources */,
+				3374186425D67B3F0042E6F9 /* Login.storyboard in Resources */,
+				337418A425D682000042E6F9 /* RobotoCondensed-Light.ttf in Resources */,
+				3379035825D80C6E009BFD8C /* ClaimStoryboard.storyboard in Resources */,
+				33110DFF25D711920056F606 /* BottomDashboardCell.xib in Resources */,
+				33110DDD25D70B3D0056F606 /* Dashboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374186D25D67B410042E6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374187825D67B410042E6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000ECD47888A812033937C1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject/Pods-TriximiHomeProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject/Pods-TriximiHomeProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject/Pods-TriximiHomeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		180A6CAE5D4CB09C0F087265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriximiHomeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1EF5CFBE4419CDDAC6D53C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriximiHomeProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8690A0B4FDE54AE89D134345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriximiHomeProject-TriximiHomeProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B4354DD30C03996844286A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject-TriximiHomeProjectUITests/Pods-TriximiHomeProject-TriximiHomeProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject-TriximiHomeProjectUITests/Pods-TriximiHomeProject-TriximiHomeProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TriximiHomeProject-TriximiHomeProjectUITests/Pods-TriximiHomeProject-TriximiHomeProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3374185525D67B3F0042E6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3379036625D81BFE009BFD8C /* AppNavigationController.swift in Sources */,
+				33110E0425D71B250056F606 /* DashboardTableView.swift in Sources */,
+				3379036125D8110D009BFD8C /* WelcomeController.swift in Sources */,
+				3329919B25D84DB000CF75A7 /* ClaimRewardController.swift in Sources */,
+				33110DF725D7117C0056F606 /* TopDashboardCell.swift in Sources */,
+				331624B025D9ABDF004AD9A8 /* RewardsModel.swift in Sources */,
+				331624AF25D9ABDF004AD9A8 /* Balance.swift in Sources */,
+				33110DFE25D711920056F606 /* BottomDashboardCell.swift in Sources */,
+				3329919625D84D9E00CF75A7 /* RedeemRewardController.swift in Sources */,
+				3316248225D9543F004AD9A8 /* Constants.swift in Sources */,
+				3316248725D9598F004AD9A8 /* UserModel.swift in Sources */,
+				331624BC25D9B2CD004AD9A8 /* RedeemModel.swift in Sources */,
+				331624B125D9ABDF004AD9A8 /* Reward.swift in Sources */,
+				3374185D25D67B3F0042E6F9 /* AppDelegate.swift in Sources */,
+				332991B825D875A100CF75A7 /* SignInController.swift in Sources */,
+				332991B325D8759300CF75A7 /* SignUpController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374186B25D67B410042E6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3374187425D67B410042E6F9 /* TriximiHomeProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374187625D67B410042E6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3374187F25D67B410042E6F9 /* TriximiHomeProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3374187125D67B410042E6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3374185825D67B3F0042E6F9 /* TriximiHomeProject */;
+			targetProxy = 3374187025D67B410042E6F9 /* PBXContainerItemProxy */;
+		};
+		3374187C25D67B410042E6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3374185825D67B3F0042E6F9 /* TriximiHomeProject */;
+			targetProxy = 3374187B25D67B410042E6F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3374186225D67B3F0042E6F9 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3374186325D67B3F0042E6F9 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		3374186725D67B410042E6F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3374186825D67B410042E6F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3374188125D67B410042E6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3374188225D67B410042E6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3374188425D67B410042E6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFDF0BF2159B13DA4C63124 /* Pods-TriximiHomeProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3374188525D67B410042E6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD846EE9586679A40492BEA6 /* Pods-TriximiHomeProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3374188725D67B410042E6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F460C31692128AE2FA9A5460 /* Pods-TriximiHomeProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriximiHomeProject.app/TriximiHomeProject";
+			};
+			name = Debug;
+		};
+		3374188825D67B410042E6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B825A5BA19077605677F3614 /* Pods-TriximiHomeProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriximiHomeProject.app/TriximiHomeProject";
+			};
+			name = Release;
+		};
+		3374188A25D67B410042E6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0C57E3389E9BD91A4829D4 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriximiHomeProject;
+			};
+			name = Debug;
+		};
+		3374188B25D67B410042E6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A155B8DE958722E8DD30D07 /* Pods-TriximiHomeProject-TriximiHomeProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q9NZVFJKL;
+				INFOPLIST_FILE = TriximiHomeProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamatus.TriximiHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriximiHomeProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3374185425D67B3F0042E6F9 /* Build configuration list for PBXProject "TriximiHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374188125D67B410042E6F9 /* Debug */,
+				3374188225D67B410042E6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3374188325D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374188425D67B410042E6F9 /* Debug */,
+				3374188525D67B410042E6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3374188625D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374188725D67B410042E6F9 /* Debug */,
+				3374188825D67B410042E6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3374188925D67B410042E6F9 /* Build configuration list for PBXNativeTarget "TriximiHomeProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374188A25D67B410042E6F9 /* Debug */,
+				3374188B25D67B410042E6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3374185125D67B3F0042E6F9 /* Project object */;
+}

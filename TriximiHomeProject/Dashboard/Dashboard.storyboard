@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uxp-kn-fmt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DashboardTable View-->
+        <scene sceneID="HMY-Ru-cYU">
+            <objects>
+                <viewController id="NgW-y7-qFb" userLabel="DashboardTable View" customClass="DashboardTableView" customModule="TriximiHomeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IXq-Br-iYL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNX-rT-tm8">
+                                <rect key="frame" x="0.0" y="83" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JIo-sN-Ivh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oNX-rT-tm8" secondAttribute="bottom" id="A2E-9n-CLQ"/>
+                            <constraint firstItem="oNX-rT-tm8" firstAttribute="top" secondItem="JIo-sN-Ivh" secondAttribute="top" constant="-5" id="A4i-7j-oaL"/>
+                            <constraint firstItem="oNX-rT-tm8" firstAttribute="leading" secondItem="JIo-sN-Ivh" secondAttribute="leading" id="J2g-Pd-kSV"/>
+                            <constraint firstItem="JIo-sN-Ivh" firstAttribute="trailing" secondItem="oNX-rT-tm8" secondAttribute="trailing" id="nYZ-RT-ZIo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="REWARDS" id="9JI-2e-Chv"/>
+                    <connections>
+                        <outlet property="tableView" destination="oNX-rT-tm8" id="chh-VS-2UZ"/>
+                        <segue destination="3MT-1m-LcC" kind="show" identifier="cellSegue" id="fek-A2-iMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BX-h4-pZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="53.571428571428569"/>
+        </scene>
+        <!--ClaimStoryboard-->
+        <scene sceneID="bLt-TS-gSO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ClaimStoryboard" storyboardName="ClaimStoryboard" id="3MT-1m-LcC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="851-ug-R0Z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOm-Su-XDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="52"/>
+        </scene>
+        <!--App Navigation Controller-->
+        <scene sceneID="eKd-gc-4uK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uxp-kn-fmt" customClass="AppNavigationController" customModule="TriximiHomeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q60-VL-qTi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NgW-y7-qFb" kind="relationship" relationship="rootViewController" id="swx-QG-nL8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRc-zv-KnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1010.144927536232" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
